@@ -14,11 +14,11 @@ puzzle_analysis/superbowl_ad_1M_frames/*.json
 puzzle_analysis/MASTER_SUMMARY.json
 puzzle_analysis/pipeline.log
 
-# Scripts with API keys
-puzzle_solver.py
-run_puzzle_solver.sh
-monitor_puzzle.sh
-rerun_solver_new_videos.sh
+# Original scripts with API keys (NOT the sanitized pipeline/ versions)
+/puzzle_solver.py
+/run_puzzle_solver.sh
+/monitor_puzzle.sh
+/rerun_solver_new_videos.sh
 
 # Logs
 puzzle_monitor_logs/

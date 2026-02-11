@@ -46,6 +46,18 @@ The biggest open problems right now:
 
 Open an issue or PR with any findings.
 
+## Run the Pipeline Yourself
+
+The full analysis pipeline is in [`pipeline/`](pipeline/). Extract frames from the YouTube videos, set your Gemini API key, and run:
+
+```bash
+pip install google-genai
+export GEMINI_API_KEY="your-api-key-here"
+cd pipeline && ./run_puzzle_solver.sh
+```
+
+See [`pipeline/README.md`](pipeline/README.md) for full setup instructions.
+
 ## Links
 
 - **Register:** [mrbeast.salesforce.com](https://mrbeast.salesforce.com/)
