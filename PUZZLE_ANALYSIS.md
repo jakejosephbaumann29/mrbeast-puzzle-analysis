@@ -16,10 +16,11 @@
 6. [Decoded Ciphers](#decoded-ciphers)
 7. [Cross-Video Patterns](#cross-video-patterns)
 8. [Super Bowl Ad "Weird Things"](#super-bowl-ad-weird-things)
-9. [Current Best Guesses](#current-best-guesses)
-10. [Next Steps](#next-steps)
-11. [Contributing](#contributing)
-12. [Sources](#sources)
+9. [Behind the Scenes Gallery Clues](#behind-the-scenes-gallery-clues)
+10. [Current Best Guesses](#current-best-guesses)
+11. [Next Steps](#next-steps)
+12. [Contributing](#contributing)
+13. [Sources](#sources)
 
 ---
 
@@ -73,44 +74,74 @@ Lone Shark Games confirmed in Hint #1 that *"almost everything Jimmy passes by i
 
 ## Puzzle Architecture
 
-### The Multi-Layer Structure (Confirmed by Hint #1)
+### The Multi-Stage Structure (Confirmed by Hints #1 and #2)
 
-The puzzle is not a single riddle. It's a dependency chain with four interconnected layers:
+The puzzle is not a single riddle. It's a staged vault with **at least 3 stages** ("like rooms in the vault") and a dependency chain within each stage.
+
+**Stage 1** has 3 hubs:
 
 ```
-Layer 1: 9 VARIETY PUZZLES (the critical path)
+Hub 1: VIDEO PLAYLIST (9 Variety Puzzles)
   Each puzzle yields one word -> 9 words form an instruction
   Word lengths: 5, 9, 5, 7, 8, 4, 9, 6, 5
   "That will help define the nature of the search"
 
-Layer 2: SUPER BOWL AD -- STREET SCENES
+Hub 2: THE COMMERCIAL (Super Bowl Ad -- Street Scenes)
   "Almost everything Jimmy passes by is a clue"
   Each "weird thing" yields one answer via standard online codes
   Look up, down, forward, backward, and behind the scenes
 
-Layer 3: SUPER BOWL AD -- BANK SCENES
-  Bank puzzles REQUIRE street-scene answers as inputs
-  "You will need specific content from the Super Bowl ad to solve anything there"
-
-Layer 4: REAL-WORLD + ROLLING CLUES
-  MrBeast's Super Bowl photos, Tonight Show appearance
-  Daily hint drops from Lone Shark Games
-  "Anytime you see MrBeast with Salesforce, assume there's something there"
+Hub 3: THE BANK (Super Bowl Ad -- Bank Scenes)
+  Bank puzzles REQUIRE content from the other hubs to solve
+  KEY: Each Salesforce computer lab screen (V1) maps 1:1 to one bank clue
+  Each screen is used only once
 ```
+
+**Stage 2**: Unlocked by the crossword puzzle (see [Stage 2 Crossword](#stage-2-crossword)). Clues fill in as Stage 1 progress is made.
+
+**Stage 3+**: Unknown. *"There are at least two more stages, and we can't say much about them yet."*
 
 ### How the Solution Path Works
 
 ```
-Step 1: Solve 9 variety puzzles -> 9-word instruction phrase
-                    |
-Step 2: Use instruction to understand WHAT to search for
-                    |
-Step 3: Decode each "weird thing" in the Super Bowl ad street scenes
-                    |
-Step 4: Apply street-scene answers as inputs to bank-scene puzzles
-                    |
-Step 5: Derive the final code -> Slack it to @MrBeast -> Win $1M
+STAGE 1:
+  Step 1: Solve 9 variety puzzles -> 9-word instruction phrase
+                      |
+  Step 2: Use instruction to understand WHAT to search for
+                      |
+  Step 3: Decode each "weird thing" in the Super Bowl ad street scenes
+                      |
+  Step 4: Match Salesforce lab screens (V1 frame 208) to bank clues (1:1)
+                      |
+  Step 5: Apply street-scene + lab-screen answers to solve bank puzzles
+                      |
+STAGE 2:
+  Step 6: Crossword puzzle unlocks (clues fill in as you progress)
+                      |
+STAGE 3+:
+  Step 7+: Unknown ("more on that another day")
+                      |
+  FINAL: Derive the Slack code -> Message @MrBeast -> Win $1M
 ```
+
+### Salesforce Lab Screen -> Bank Clue Mapping (NEW from Hint #2)
+
+From Hint #2: *"We tied each screen in the Salesforce computer lab to one clue in the bank video. Each is used only once."*
+
+The 8 screens from Video 1 (frame 208):
+
+| Screen | Icon | Mapped Bank Clue |
+|--------|------|-----------------|
+| 1 | Spider/Tarantula | ? |
+| 2 | Bird/Canary | ? |
+| 3 | Sine Wave | ? |
+| 4 | Chandler + 'D' | ? |
+| 5 | Ear | ? |
+| 6 | Head/Brain | ? |
+| 7 | Witch/Dancer | ? |
+| 8 | '1' / Elephant | ? |
+
+**Which screen goes with which bank clue is up to us to figure out.**
 
 ### Official Hint #1 (Lone Shark Games, Feb 9, 2026)
 
@@ -136,6 +167,46 @@ Step 5: Derive the final code -> Slack it to @MrBeast -> Win $1M
 | "define the nature of the search" | The phrase tells you what kind of search to do |
 | "first step on your journey" | The 9-word clue is Step 1, not the final answer |
 | "direct way through" | There is one clear path, not random guessing |
+
+### Official Hint #2 (Lone Shark Games, Feb 10, 2026)
+
+> **Source:** [mrbeast.salesforce.com](https://mrbeast.salesforce.com/)
+>
+> *"You guys are making tremendous progress!"*
+>
+> *"Many of you have already figured out - this hunt has 3 main hubs in this first stage (yes there's stages - like rooms in the vault, but more on that another day)."*
+>
+> *"Hub 1 is the video playlist. Hub 2 is the commercial that aired on Sunday. Hub 3 is the bank."*
+>
+> *"There are at least two more stages, and we can't say much about them yet."*
+>
+> **On the bank:** *"We tied each screen in the Salesforce computer lab to one clue in the bank video. Which screen goes with which clue ... that's up to you to figure out. Each is used only once, so once you tie a screen to a bank video clue, you won't use it for any other clue."*
+>
+> **On Stage 2:** *"In one of the Behind the Scenes videos, you might have seen puzzlemaster Mike drop a crossword puzzle. That crossword might also be a key to STAGE 2. It doesn't have any clues... yet. The more progress you make, the more the clues will fill in. You'll need those for the endgame."*
+
+| What Hint #2 Tells Us | Implication |
+|------------------------|------------|
+| "3 main hubs in this first stage" | Variety puzzles, commercial, and bank are all Stage 1 |
+| "yes there's stages" | Multi-stage structure confirmed (at least 3 stages) |
+| "lab screen -> bank clue, 1:1" | The 8 Salesforce mascot screens from V1 are extraction keys for bank puzzles |
+| "each used only once" | One-to-one matching, no reuse -- process of elimination helps |
+| "crossword ... key to STAGE 2" | The BTS crossword is the gateway to Stage 2 |
+| "doesn't have any clues... yet" | Crossword clues unlock dynamically as Stage 1 is solved |
+| "you'll need those for the endgame" | The crossword is required for the final solution |
+
+### Stage 2 Crossword
+
+Puzzlemaster Mike's crossword was shown in the Behind the Scenes video and is available at [mrbeast.salesforce.com/behindthescenes](https://mrbeast.salesforce.com/behindthescenes). The crossword image is included in this repo as `puzzle_analysis/superbowl_ad_1M_frames/crossword_stage2.webp`.
+
+**Title:** "I MADE A PUZZLE FOR JIMMY"
+
+**Key facts:**
+- Standard crossword grid (~15x15) with Lone Shark Games branding
+- The clue list is **intentionally incomplete** -- clues fill in as the community solves Stage 1
+- Per Hint #2: *"You'll need those for the endgame"*
+- The crossword was a "gift to Jimmy" from puzzlemaster Mike
+
+**Strategy:** This crossword cannot be fully solved until Stage 1 progress unlocks its clues. Focus on Stage 1 first.
 
 ---
 
@@ -672,6 +743,63 @@ Per Hint #1: *"Figure out how to get an answer from each weird thing."* Each ele
 
 ---
 
+## Behind the Scenes Gallery Clues
+
+The [Behind the Scenes page](https://mrbeast.salesforce.com/behindthescenes) contains 9 production photos. Per Hint #1: *"look behind the scenes"* -- these images may contain intentional clues.
+
+### Golden Desert Vault Expense List
+
+A clipboard reads:
+
+```
+FEBRUARY 2026
+OPERATING CAPITAL EXPENSES
+OF GOLDEN DESERT VAULT
+
+One Million Dollars in Large Bills
+MrBeast-Branded Sand Hydrofoil
+Proton Cannon Usable for Missile Defense
+Lion (2)
+Ramjet Engine Upgrades
+Lamborghini Countach Moved to Garage
+Vault Code Generator (Unbreakable)
+
+[MrBeast signature]
+```
+
+First-letter acrostic: **O-M-P-L-R-L-V** (no obvious word -- may use a different extraction). The items themselves are absurd/fictional, suggesting the real content is encoded.
+
+### Vault Set Clapperboard
+
+```
+A021 | MIKE
+SALESFORCE: INSIDE THE BEAST
+J. WOLINER
+M. CORDERO
+1.20.26
+```
+
+Production title "INSIDE THE BEAST" and shot date January 20, 2026. Puzzlemaster Mike (Lone Shark Games) is the subject.
+
+### Lobby Scene Props
+
+A group photo in a hotel/office lobby contains:
+
+- **4 world time zone clocks:** Tokyo, London, Chicago, New York
+- **Rubik's cube** held by one person
+- **Large jar of coins** held by another
+- **"FEASTABLES" sweatshirt** (MrBeast's chocolate brand)
+- **Magazine/book** being read by a third person
+- **Papers and succulent** on coffee table
+
+The 4 time zones may encode: time differences, specific times shown, or city initials (T-L-C-N).
+
+### Belt Construction
+
+A prop maker is shown assembling MrBeast's belt (the one with code 3X771 and color-coded MRBEAST letters). Blue and yellow tape are used for the colored X markings.
+
+---
+
 ## Current Best Guesses
 
 The puzzle was designed by Lone Shark Games to unfold over weeks. Not all clues have been released. The 9 variety puzzles require extraction keys we don't have yet. **The final answer is not something we can derive from current data alone.**
@@ -715,7 +843,7 @@ The number 3634826 could be latitude 36.34826 N, which maps to the Nevada desert
 
 ## Next Steps
 
-### Priority 1: Complete the 9 Variety Puzzles (Critical Path)
+### Priority 1: Complete the 9 Variety Puzzles (Stage 1, Hub 1)
 
 - [x] Found all 9 puzzle links via BeastForce67 pinned comments
 - [x] Downloaded all 9 puzzle images
@@ -727,26 +855,35 @@ The number 3634826 could be latitude 36.34826 N, which maps to the Nevada desert
 - [ ] Assemble the 9-word clue
 - [ ] Interpret the instruction it gives
 
-### Priority 2: Decode Street Scene Elements
+### Priority 2: Map Lab Screens to Bank Clues (Stage 1, Hub 3)
+
+Per Hint #2, the 8 Salesforce computer lab screens (V1 frame 208) map 1:1 to bank clues. This is the key to unlocking the bank puzzles.
+
+- [ ] Identify all distinct bank puzzles in Video 4
+- [ ] Match each lab screen icon to its corresponding bank clue
+- [ ] Use process of elimination (each screen used exactly once)
+
+### Priority 3: Decode Street Scene Elements (Stage 1, Hub 2)
 
 - [ ] Catalogue every "weird thing" Jimmy passes in the ad
 - [ ] Apply standard online codes to each element
 - [ ] Check all directions: up, down, forward, backward, behind the scenes
 - [ ] Compile one answer per element
 
-### Priority 3: Solve Bank Scene Puzzles
+### Priority 4: Stage 2 Crossword
 
-- [ ] Wait for Video 4 pipeline to finish remaining frames
-- [ ] Map street-scene answers to bank-scene puzzles
-- [ ] Look for combination locks, ciphers, grids that use street answers as keys
+- [ ] Monitor crossword clue drops as Stage 1 progress unlocks them
+- [ ] Begin filling in the crossword as clues appear
+- [ ] Cross-reference crossword answers with Stage 1 findings
 
 ### Other
 
+- [ ] Finish Video 4 pipeline (~2,163 frames remaining)
+- [ ] Analyze BTS gallery images for additional hidden clues
 - [ ] Register at [mrbeast.salesforce.com](https://mrbeast.salesforce.com/)
 - [ ] Visit `https://sforce.co/4bAAGMH?r=qr` (decoded QR code)
-- [ ] Check @the1Mil on social media platforms
 - [ ] Monitor daily hint drops from Lone Shark Games
-- [ ] Join community solving groups (Reddit, Discord)
+- [ ] Join community solving groups (Reddit, Discord, Slack)
 
 ---
 
@@ -771,6 +908,8 @@ All puzzle images are in `puzzle_analysis/superbowl_ad_1M_frames/`. Open an issu
 ## Sources
 
 - **[Hint #1 -- Lone Shark Games (Feb 9, 2026)](https://youtu.be/hGuA0a15VWQ)**
+- **[Hint #2 -- mrbeast.salesforce.com (Feb 10, 2026)](https://mrbeast.salesforce.com/)**
+- **[Behind the Scenes -- mrbeast.salesforce.com](https://mrbeast.salesforce.com/behindthescenes)**
 - [ARGNet: Start Slacking Off with MrBeast's Million Dollar Puzzle Hunt](https://www.argn.com/2026/02/start_slacking_off_with_mrbeasts_million_dollar_puzzle_hunt/)
 - [Newsweek: MrBeast Shares Update on $1 Million Puzzle](https://www.newsweek.com/mrbeast-shares-update-on-1-million-puzzle-advertised-during-super-bowl-11490124)
 - [ABC News: MrBeast drops big hint for $1M puzzle](https://abcnews.go.com/GMA/Culture/mrbeast-drops-big-hint-1m-puzzle-salesforce-super/story?id=129987912)
