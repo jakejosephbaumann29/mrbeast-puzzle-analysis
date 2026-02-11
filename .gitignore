@@ -1,0 +1,33 @@
+# Video files
+*.mp4
+*.mp4.part
+*.webm
+
+# Frame extraction directories (too large)
+*_frames/
+
+# Pipeline output (thousands of JSON files)
+puzzle_analysis/first_to_find_1M_frames/
+puzzle_analysis/rewatch_to_win_1M_frames/
+puzzle_analysis/slack_ad_frames/
+puzzle_analysis/superbowl_ad_1M_frames/*.json
+puzzle_analysis/MASTER_SUMMARY.json
+puzzle_analysis/pipeline.log
+
+# Scripts with API keys
+puzzle_solver.py
+run_puzzle_solver.sh
+monitor_puzzle.sh
+rerun_solver_new_videos.sh
+
+# Logs
+puzzle_monitor_logs/
+
+# System files
+.DS_Store
+
+# Battle plan (internal)
+PUZZLE_BATTLE_PLAN.md
+
+# Text solution notes
+puzzle_analysis/superbowl_ad_1M_frames/*.txt
